@@ -1,15 +1,26 @@
 * {
     text-align: center;
+    outline: 1px solid red;
 }
 
 html {
     font-family: Roboto,HelveticaNeue,Arial,sans-serif;
     font-size: 16px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
-main {
-    max-width: 584px;
-    margin: 160px auto 0 auto;
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#webpage {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 input {
@@ -18,6 +29,7 @@ input {
 }
 
 #searchbar {
+    max-width: 584px;
     text-align: left;
     padding-left: 24px;
     width: 100%;
@@ -36,6 +48,7 @@ input {
     background-color: #fff;
     box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
     border-color: rgba(223,225,229,0);
+    outline: none;
 }
 
 button {
@@ -61,4 +74,73 @@ button {
 
 #logo {
     margin-bottom: 24px;
+}
+
+#div-top {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+#div-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    min-height: 92px;
+}
+}
+
+#div-search {
+    padding: 20px;
+    max-height: 160px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+
+}
+
+#div-extra {
+    flex-grow: 1;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    display: block;
+}
+
+#div-footer {
+    display: block;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+
+#div-footer {
+    background: #f2f2f2;;
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-bottom, .footer-top {
+    outline: 1px solid tomato;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section-left, .footer-section-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+#div-footer a {
+    color: #70757a;
+    padding: 16px;
 }
